@@ -14,7 +14,7 @@ def crawl_cnbc_esg_antibot():
     # 1. Konfigurasi Selenium (ANTI-BOT & VISIBLE MODE)
     chrome_options = Options()
     # SAYA MATIKAN HEADLESS AGAR ANDA BISA MELIHAT LAYAR CHROME-NYA LANGSUNG
-    # chrome_options.add_argument("--headless") 
+    chrome_options.add_argument("--headless") 
     
     # Teknik menyamarkan Selenium agar terlihat seperti manusia asli
     chrome_options.add_argument("--disable-blink-features=AutomationControlled")
