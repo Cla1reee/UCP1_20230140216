@@ -23,7 +23,7 @@ def crawl_cnbc_esg_antibot():
 
     chrome_options = Options()
     # Aktifkan kembali headless jika sudah yakin jalan di Task Scheduler
-    # chrome_options.add_argument("--headless") 
+    chrome_options.add_argument("--headless") 
     chrome_options.add_argument("--disable-blink-features=AutomationControlled")
     chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
     chrome_options.add_experimental_option('useAutomationExtension', False)
